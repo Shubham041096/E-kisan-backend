@@ -2,8 +2,6 @@ com\app\custom_exception\ResourceNotFoundException.class
 com\app\pojos\Role.class
 com\app\controller\ProductController.class
 com\app\service\IUserService.class
-com\app\filters\JWTRequestFilter.class
-com\app\jwt_utils\JwtUtils.class
 com\app\controller\TestController.class
 com\app\dto\UserRegResponse.class
 com\app\dao\IProductsRepository.class
@@ -13,13 +11,11 @@ com\app\dao\IRoleRepository.class
 com\app\dto\AuthRequest.class
 com\app\pojos\Products.class
 com\app\service\ProductsServiceImpl.class
-com\app\controller\SignInSignUpController.class
 com\app\dao\IUserRepository.class
 com\app\pojos\User.class
 com\app\dto\RoleDTO.class
 com\app\utils\CommonUtils.class
 com\app\service\UserServiceImpl.class
-com\app\webconfig\WebSecurityConfig.class
 com\app\dto\UserDTO.class
 com\app\pojos\Category.class
 com\app\controller\LoginController.class
@@ -27,8 +23,6 @@ com\app\dto\UserLoginResponse.class
 com\app\service\RoleServiceImpl.class
 com\app\pojos\Customer.class
 com\app\pojos\UserRole.class
-com\app\service\CustomUserDetails.class
-com\app\service\MyUserDetailsService.class
 com\app\dto\AuthResp.class
 com\app\exception_handler\GlobalExceptionHandler.class
 com\app\service\IRoleService.class
