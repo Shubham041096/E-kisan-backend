@@ -37,9 +37,10 @@ public class LoginController {
 	} 
 	
 	@PostMapping("/register")
-	public String addCustomer(@RequestBody @Valid User u) {
+	public UserLoginResponse addCustomer(@RequestBody @Valid User u) {
 		userService.addUser(u);
-		return "Successfully added";
+		UserLoginResponse userLoginResponse =commonUtils.convertToLoginResponse(u,u.getRoles().stream().findFirst().toString());
+		return userLoginResponse;
 	}
 	
 	@PostMapping("/login")
