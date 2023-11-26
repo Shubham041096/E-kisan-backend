@@ -39,4 +39,7 @@ public class Products {
 	@JoinColumn(name="catId")
 	private Category catId;
 	
+	@Column(columnDefinition = "INT DEFAULT 0")
+	private int isActive;
+	
 }

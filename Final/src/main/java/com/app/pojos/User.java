@@ -45,7 +45,7 @@ public class User {
 	
 	private String contactNo;
 	
-	@JsonIgnore
+
 	@ManyToMany
 	@JoinTable(name = "users_roles", 
 	joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
