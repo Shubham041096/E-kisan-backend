@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.app.demo.DemoApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.238 s <<< FAILURE! - in com.app.demo.DemoApplicationTests
-contextLoads  Time elapsed: 0.017 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: 
-Error creating bean with name 'scriptDataSourceInitializer' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration$SharedCredentialsDataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #4 of URL [file:/F:/Shubham/Backend/E-kisan-backend/Final/target/classes/data.sql]: insert into category (CAT_ID, CAT_NAME) values(1,'vegetables'); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.CATEGORY(CAT_ID) [1, 'vegetables']"; SQL statement:
-insert into category (CAT_ID, CAT_NAME) values(1,'vegetables') [23505-200]
-Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
-Failed to execute SQL script statement #4 of URL [file:/F:/Shubham/Backend/E-kisan-backend/Final/target/classes/data.sql]: insert into category (CAT_ID, CAT_NAME) values(1,'vegetables'); nested exception is org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.CATEGORY(CAT_ID) [1, 'vegetables']"; SQL statement:
-insert into category (CAT_ID, CAT_NAME) values(1,'vegetables') [23505-200]
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
-Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.CATEGORY(CAT_ID) [1, 'vegetables']"; SQL statement:
-insert into category (CAT_ID, CAT_NAME) values(1,'vegetables') [23505-200]
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.982 s - in com.app.demo.DemoApplicationTests

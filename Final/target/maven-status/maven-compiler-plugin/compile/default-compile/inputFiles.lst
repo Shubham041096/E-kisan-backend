@@ -1,3 +1,4 @@
+F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\service\ICategoryService.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\pojos\Category.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\service\IUserService.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\controller\SignInSignUpController.java
@@ -10,6 +11,7 @@ F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\pojos\User.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\service\MyUserDetailsService.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\service\RoleServiceImpl.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\service\UserServiceImpl.java
+F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\dao\ICategoryRepository.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\pojos\CustomerLogin.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\service\CustomUserDetails.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\pojos\UserRole.java
@@ -22,6 +24,7 @@ F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\webconfig\WebSecu
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\pojos\Cart.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\dao\IUserRepository.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\dto\AuthRequest.java
+F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\service\CategoryServiceImpl.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\custom_exception\ResourceNotFoundException.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\dao\ICartRepository.java
 F:\Shubham\Backend\E-kisan-backend\Final\src\main\java\com\app\pojos\Products.java
