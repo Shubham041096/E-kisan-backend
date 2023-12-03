@@ -1,6 +1,7 @@
 package com.app.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,11 +48,13 @@ public class UserServiceImpl implements IUserService{
 	//for checking email
 	@Override
 	public User checkingUserEmail(String email) {
-		return userRepo.findByEmail(email).orElseThrow(()->new RuntimeException("User with email " + email+"is already present"));
+		Optional<User> optionalUser = userRepo.findByEmail(email);
+//		.orElseThrow(()->
+		if(optionalUser.isPresent()) {
+			throw new RuntimeException("User with email " + email+"is already present");
+		}
+		return null;
 	}
-	
-	
-	
 	
 	
 //
