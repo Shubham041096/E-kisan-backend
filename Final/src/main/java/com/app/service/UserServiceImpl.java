@@ -47,7 +47,11 @@ public class UserServiceImpl implements IUserService{
 	//for checking email
 	@Override
 	public User checkingUserEmail(String email) {
-		return userRepo.findByEmail(email).orElseThrow(()->new RuntimeException("User with email " + email+"is already present"));
+		Optional<User> optionalUser = userRepo.findByEmail(email);
+		if(optionalUser.isPresent()) {
+			throw new RuntimeException("User with email " + email+"is already present");
+		}
+		return null;
 	}
 	
 	
