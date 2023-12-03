@@ -69,6 +69,12 @@ public class TestController {
 	public List<Role> addSecRoles(@RequestBody List<Role> newRoles) {
 		return roleService.addSecUsers(newRoles);
 	}
+	
+	@PostMapping("addCat")
+	public Category addCategory(@RequestBody Category category) {
+		return categoryService.addCat(category);
+	}
+	
 //	@GetMapping("/user")
 //	public String showUser()
 //	{

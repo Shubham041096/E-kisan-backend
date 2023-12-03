@@ -11,4 +11,5 @@ public interface ICategoryService {
 	//To display all category
 	List<Category> showAllCategory();
 	 
+	Category addCat(Category category);
 }

@@ -27,4 +27,9 @@ public class CategoryServiceImpl implements ICategoryService {
 		// TODO Auto-generated method stub
 		return categoryRepository.findAll();
 	}
+
+	@Override
+	public Category addCat(Category category) {
+		return categoryRepository.save(category);
+	}
 }
