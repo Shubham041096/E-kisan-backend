@@ -34,7 +34,6 @@ public class ProductsServiceImpl implements IProductsService {
 		return productsRepo.findByProdName(name).orElseThrow(()->new RuntimeException(" invalid product name"));
 	}
 	
-
 	//To add product to the database
 	@Override
 	public Products addProduct(Products product) {
@@ -61,7 +60,10 @@ public class ProductsServiceImpl implements IProductsService {
 		
 		return msg; 
 	}
-	
-	
+
+	@Override
+	public Products getProductsByEmail(String email) {
+		return productsRepo.findByEmail(email).orElseThrow(()->new RuntimeException(" No records find"));
+	}
 
 }

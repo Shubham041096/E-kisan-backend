@@ -12,6 +12,9 @@ public interface IProductsService {
 	
 	 //To search product by name
 	 Products getProductsByName(String name);
+	 
+	 //To search product by email
+	 Products getProductsByEmail(String email);
 	
 	 //To add new product to db
 	 Products addProduct(Products product); 

@@ -57,4 +57,10 @@ public class ProductController {
 			return productsService.deleteProduct(id);
 	}
 	
+	//get product by email
+	@GetMapping("/{email}")
+	public Products getProductsByEmail(@PathVariable String email) {
+		return productsService.getProductsByEmail(email);
+	}
+	
 }

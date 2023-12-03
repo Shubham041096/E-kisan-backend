@@ -42,4 +42,6 @@ public class Products {
 	@Column(columnDefinition = "INT DEFAULT 0")
 	private int isActive;
 	
+	private String email;
+	
 }
