@@ -58,7 +58,7 @@ public class ProductController {
 	}
 	
 	//get product by email
-	@GetMapping("/{email}")
+	@GetMapping("/getProduct/{email}")
 	public Products getProductsByEmail(@PathVariable String email) {
 		return productsService.getProductsByEmail(email);
 	}
