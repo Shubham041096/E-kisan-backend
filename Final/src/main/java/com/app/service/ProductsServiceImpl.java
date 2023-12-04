@@ -43,6 +43,7 @@ public class ProductsServiceImpl implements IProductsService {
 	
 	//To update product
 	@Override
+	@Transactional
 	public Products updateproductDetails(Products updatedProduct) {
 		return productsRepo.save(updatedProduct);
 	}
@@ -64,6 +65,14 @@ public class ProductsServiceImpl implements IProductsService {
 	@Override
 	public Products getProductsByEmail(String email) {
 		return productsRepo.findByEmail(email).orElseThrow(()->new RuntimeException(" No records find"));
+	}
+
+
+	@Override
+	@Transactional
+	public int updateproductFlag(int isActive, String productId) {
+		// TODO Auto-generated method stub
+		return productsRepo.updateActiveFlag(isActive, productId);
 	}
 
 }

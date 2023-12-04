@@ -22,6 +22,9 @@ public interface IProductsService {
 	 //To update product
 	 Products updateproductDetails(Products updatedProduct);
 	 
+	 //To update product flag
+	 int updateproductFlag(int isActive, String prodId);
+	 
 	 //To delete the product
 	 String deleteProduct(int id);
 	 

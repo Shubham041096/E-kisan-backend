@@ -50,6 +50,17 @@ public class ProductController {
 	public Products updateProduct(@RequestBody Products product) {
 		return productsService.updateproductDetails(product);
 	}
+
+	//to update product
+	@PutMapping("/updateFlag/{isActive}/{prodId}")
+	public String updateProductFlag(@PathVariable int isActive, @PathVariable String prodId) {
+		if(productsService.updateproductFlag(isActive, prodId)>0)
+		{
+			return "Success";
+		}else {
+			return "Fail";
+		}
+	}
 	
 	//To deleteing the product by id
 	@DeleteMapping("/{id}")
