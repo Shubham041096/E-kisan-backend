@@ -38,7 +38,11 @@ public class LoginController {
 	
 	@PostMapping("/register")
 	public UserLoginResponse addCustomer(@RequestBody @Valid User u) {
+<<<<<<< HEAD
 		User user = userService.checkingUserEmail(u.getEmail());
+=======
+		userService.checkingUserEmail(u.getEmail());
+>>>>>>> b8f4705072bd6364a85e748ef2ee27063ddc3dfa
 		userService.addUser(u);
 		UserLoginResponse userLoginResponse =commonUtils.convertToLoginResponse(u,u.getRoles().stream().findFirst().toString());
 		return userLoginResponse;
