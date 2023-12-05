@@ -13,5 +13,12 @@ public class CorsConfig implements WebMvcConfigurer{
 	                .allowedOrigins("https://ekisan.netlify.app")
 	                .allowedMethods("GET", "POST", "PUT", "DELETE")
 	                .allowedHeaders("*");
+	        registry.addMapping("/products/**")
+		            .allowedOrigins("https://ekisan.netlify.app")
+		            .allowedMethods("GET", "POST", "PUT", "DELETE")
+		            .allowedHeaders("*");
+	        
 	    }
+	 
+	 
 }
