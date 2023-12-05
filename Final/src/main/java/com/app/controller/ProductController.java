@@ -70,7 +70,7 @@ public class ProductController {
 	
 	//get product by email
 	@GetMapping("/getProduct/{email}")
-	public Products getProductsByEmail(@PathVariable String email) {
+	public List<Products> getProductsByEmail(@PathVariable String email) {
 		return productsService.getProductsByEmail(email);
 	}
 	

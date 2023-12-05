@@ -1,5 +1,6 @@
 package com.app.dao;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,7 +16,7 @@ public interface IProductsRepository extends JpaRepository<Products, Integer> {
 	Optional<Products> findByProdName(String name);
 	
 	//Searching product by name
-	Optional<Products> findByEmail(String name);
+	List<Products> findByEmail(String name);
 	
 	@Query(value="select prodName from Products where prodname=?1", nativeQuery = true)
 	//@Query("select u.prodName from Products u where u.prodName=?1")

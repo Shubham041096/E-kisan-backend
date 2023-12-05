@@ -63,8 +63,8 @@ public class ProductsServiceImpl implements IProductsService {
 	}
 
 	@Override
-	public Products getProductsByEmail(String email) {
-		return productsRepo.findByEmail(email).orElseThrow(()->new RuntimeException(" No records find"));
+	public List<Products> getProductsByEmail(String email) {
+		return productsRepo.findByEmail(email);
 	}
 
 
