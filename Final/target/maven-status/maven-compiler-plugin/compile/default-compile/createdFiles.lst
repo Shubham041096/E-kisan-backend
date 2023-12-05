@@ -1,5 +1,6 @@
 com\app\custom_exception\ResourceNotFoundException.class
 com\app\pojos\Role.class
+com\app\CorsConfig.class
 com\app\controller\ProductController.class
 com\app\service\CategoryServiceImpl.class
 com\app\service\IUserService.class
@@ -30,3 +31,4 @@ com\app\exception_handler\GlobalExceptionHandler.class
 com\app\service\IRoleService.class
 com\app\dao\ICategoryRepository.class
 com\app\pojos\UserLogin.class
+com\app\dto\Response.class
