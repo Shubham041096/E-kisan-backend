@@ -28,6 +28,7 @@ public class UserServiceImpl implements IUserService{
 
 	//to add new user to db
 	@Override
+	@Transactional
 	public User addUser(User u) {
 		System.out.println("inside service impl");
 		return userRepo.save(u);
